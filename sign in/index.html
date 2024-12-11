@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formilar</title>
+    <link rel="stylesheet" href="../npm/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <form action="" class="col-12 col-lg-7">
+        <h1>prémier formilar</h1>
+        
+        <label for="name">nom</label>
+        <input type="text" name="nom" id="name">
+        <label for="surname">prénom</label>
+        <input type="text" name="nom" id="surname">
+        <br>
+        <label for="email">gmail</label>
+        <input type="email" name="mail" id="email">
+        
+        <label for="PW">mot de pass</label>
+        <input type="password" name="passWord" id="PW">
+        <br>
+
+        <label for="PW2">mot de pass</label>
+        <input type="password" name="conform" id="PW2">
+        <br>
+
+        
+        <label for="f">femme</label>
+        <input type="radio" name="gender"  id="f">
+        br
+        <label for="h">homme</label>
+        <input type="radio" name="gender" id="h">
+        <br>
+        <label for="pays">paye</label>
+        <input list="pays" name="pay" value="" id="pay">
+        <datalist id="pays">
+           
+            <option value="Tunise">nabule</option>
+            <option value="France">unis</option>
+            <option value="Algeria">Bizart</option>
+            <option value="Egypt">Gafsa</option>
+            <option value="Jordon">Jandoba</option>
+        </datalist>
+        <br>
+        <button onclick="checkout()">vérifie</button>
+    </form>
+</body>
+<script src="../npm/node_modules/bootstrap/dist/js/bootstrap.bundle.js"> </script>
+</html>
