@@ -7,6 +7,7 @@
 body{
     background: linear-gradient(90deg,rgba(207, 12, 12, 0.912),rgba(153, 28, 68, 0.781),rgba(168, 18, 25, 0.781));
     font-family:"Poppins", sans-serif;
+    font-size:14px ;
 }
 
 h4{

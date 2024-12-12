@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formilar</title>
+    <title>sign up</title>
     <link rel="stylesheet" href="../npm/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -27,12 +27,15 @@
             
               <div class="col-md-6 mb-3">
                 <label for="Usuename" class="form-label">Usuename</label>
-                <input type="text" class="form-control" id="Usuename" aria-describedby="emailHelp">
+                <input type="text" class="form-control" id="Usuename" aria-describedby="emailHelp"  required>
                 </div>
                 <div class="col-md-6 mb-3">
                 <label for="Email1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="my-1">We'll never share your email with anyone else.</div>
+                <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp"  required>
+                <details>
+                  <summary></summary>
+                  <div id="emailHelp" class="my-1">We'll never share your email with anyone else.</div>
+                </details>
               </div>
             </div>
             <div class="row mt-5">
@@ -40,20 +43,20 @@
               
               <div class="col-md-6 mb-3">
               <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password">
+              <input type="password" class="form-control" id="password"  required>
             </div>
             <div class="col-md-6 mb-3">
               <label for="conform" class="form-label"> conform Password</label>
-              <input type="password" class="form-control" id="conform">
+              <input type="password" class="form-control" id="conform"  required>
             </div>
             <div class="mb-3 mt-3 form-check">
               <input type="checkbox" class="btn-outline-primary " id="terms">
-              <label class="form-check-label  " for="terms">I agree to all  the terms</label>
+              <label class="form-check-label  " for="terms"  required>I agree to all  the terms</label>
             </div>
           </div>
 
             
-            <button type="submit" class="btn btn-primary mt-4">Submit</button>
+            <button type="submit" class="btn btn-primary mt-4">sign up</button>
           </form>
     </div>
 </body>
