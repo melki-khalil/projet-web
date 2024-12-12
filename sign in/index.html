@@ -12,18 +12,37 @@
 
         <form class="mx-auto">
             <h4 class="text-center"> sign up </h4>
-            <div class="mb-3 mt-5">
-              <label for="Usuename" class="form-label">Usuename</label>
-              <input type="text" class="form-control" id="Usuename" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">don't forget your user name.</div>
+            <div class="row mt-5">
+
+              <div class="col-md-6 mb-3">
+                <label for="First" class="form-label">First name</label>
+                <input type="text" class="form-control" id="First" aria-describedby="emailHelp">
+                </div>
+                <div class="col-md-6 mb-3">
+                <label for="surname" class="form-label">Email surname</label>
+                <input type="text" class="form-control" id="surname" aria-describedby="emailHelp">
+                
+              </div>
            
-              <label for="Email1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            
+              <div class="col-md-6 mb-3">
+                <label for="Usuename" class="form-label">Usuename</label>
+                <input type="text" class="form-control" id="Usuename" aria-describedby="emailHelp">
+                </div>
+                <div class="col-md-6 mb-3">
+                <label for="Email1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="my-1">We'll never share your email with anyone else.</div>
+              </div>
             </div>
-            <div class="mb-3 mt-5" btn-group>
+            <div class="row mt-5">
+
+              
+              <div class="col-md-6 mb-3">
               <label for="password" class="form-label">Password</label>
               <input type="password" class="form-control" id="password">
+            </div>
+            <div class="col-md-6 mb-3">
               <label for="conform" class="form-label"> conform Password</label>
               <input type="password" class="form-control" id="conform">
             </div>
@@ -31,6 +50,9 @@
               <input type="checkbox" class="btn-outline-primary " id="terms">
               <label class="form-check-label  " for="terms">I agree to all  the terms</label>
             </div>
+          </div>
+
+            
             <button type="submit" class="btn btn-primary mt-4">Submit</button>
           </form>
     </div>
