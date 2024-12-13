@@ -12,3 +12,11 @@
     max-width: 300px;
     margin: auto;
 }
+.footer-items{
+    background-color: rgb(221, 67, 67);
+    color: gray;
+}
+
+.bg-custom-redish{
+    background-color: rgb(221, 67, 67);
+}

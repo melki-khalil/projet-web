@@ -9,10 +9,45 @@
   <link rel="stylesheet" href="/npm/node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 <body>
-  
-<nav class="navbar navbar-expand-lg bg-dark">
-  <p>this is a nave</p>
-</nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom-redish nav-items">
+
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Cusina</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             catagories
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">pots</a></li>
+              <li><a class="dropdown-item" href="#">plats</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">glasses</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">cart</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
 <main class="container">
   <section class="row">
     <article class="col-xl-3 col-lg-4 col-md-6">
@@ -105,7 +140,54 @@
 
 </main>
 
+<footer class="footer mt-auto"> <div class="row d-flex footer-items">
+  
+  <div class="col">
+    <h5>catogories</h5>
+    <ul>
+      <li>pans</li>
+      <li>table ware</li>
+      <li>glasses</li>
+      <li>kitcheln machine</li>
+    </ul>
+  </div>
+  
+  <div class="col">
+    <h5>more info</h5>
+    <ul>
+      <li>terms</li>
+      <li>services</li>
+      <li>Privacy</li>
+      <li>About us</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h5>payment methods</h5>
+    <div class="col-12 col-sm-6 col-lg-auto order-lg-3 mb-2 footer__payments">
+      <h6 class="heading medium strong mb-3 text-nowrap">Payment methods</h6>
 
+      <div class="d-flex flex-wrap mb-3">
+          <img src="./icon_amex.png" alt="Apple Pay" title="Apple Pay" height="36" class="d-none mb-2 mr-2 js-applepay" loading="lazy">
+          <img src="./icon_paypal.png" alt="Paypal" title="Paypal" height="36" class="mb-2 mr-2" loading="lazy">
+          <img src="./icon_visa.png" alt="Creditcard" title="Creditcard" height="36" class="mb-2 mr-2" loading="lazy">
+          <img src="./icon_postepay.png" alt="Creditcard" title="Creditcard" height="36" class="mb-2 mr-2" loading="lazy">
+          <img src="./icon_mastercard.png" alt="Creditcard" title="Creditcard" height="36" class="mb-2 mr-2" loading="lazy">
+
+  </div>
+  </div>
+    
+    </div>
+    <div class="col">
+      <h5>wearhous location</h5>
+      <ul>
+        <li>tusis-fake-location</li>
+        <li>bizart-fake street</li>
+        
+      </ul>
+    </div>
+  </div>
+</div></footer>
 
 </body>
+<script src="../npm/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"> </script>
 </html>
