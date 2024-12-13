@@ -2,41 +2,13 @@
     padding: 0;
     margin: 0;
 }
-.left{
-    float: left;
- 
-    
+
+
+.rating-star{
+    color: cornflowerblue;
 }
 
-.srch{
-    width: 250px;
-    height: 20px;
-}
-header{ 
-    text-align: center;
-    background-color: rgb(186, 34, 34);
-    padding-bottom: 1%;
-    
-}
-.clear{
-    clear: both;
-}
-.cooking-equipment{
-    list-style-type: none;
-    display: inline;
-    margin-left: 20px;
-}
-#shop{width:30px;
-    height: 30px;
-    margin-left: 10%;}
-.cart-pay{
-    position:absolute;
-    right: 10px;
-    top: 9px;
-    background: none;
-    border: none;
-}
-.cart-pay :hover,.cart-pay :focus{
-    background-color: white;
-    color:  rgb(186, 34, 34);
+.product-sell{
+    max-width: 300px;
+    margin: auto;
 }
