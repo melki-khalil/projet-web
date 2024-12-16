@@ -9,10 +9,8 @@
   <link rel="stylesheet" href="./npm/node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 <body>
-  <!--page header-->
+  <!-- Page header -->
   <header class="navbar navbar-expand-lg navbar-dark bg-custom-redish nav-items pb-2">
-
-
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Cusina</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,9 +24,8 @@
           <li class="nav-item active">
             <a class="nav-link" href="#">Link</a>
           </li>
-          
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">cart</a>
+            <a class="nav-link disabled" aria-disabled="true">Cart</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -38,7 +35,8 @@
       </div>
     </div>
   </header>
-  <!--page navigator-->
+
+  <!-- Page navigator -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-custom-redish nav-items ">
 
 
@@ -146,146 +144,152 @@
     </div>
   </nav>
 
-<main class="container">
-  <section class="row">
-    <article class="col-xl-3 col-lg-4 col-md-6">
-      <div class="card product-sell" >
-        <img src="./product_image/cheshirrr.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h6 class="card-subtitle mb-2 text-muted ">pan</h6>
-          <h5 class="card-title">grey seramic pan</h5>
-          <p class="card-text">25.000 DT <span class="ml-auto float-end rating-star">
-            <i class=" bi bi-star-fill"></i>
-            <i class=" bi bi-star-fill"></i>
-            <i class=" bi bi-star-fill"></i>
-          
-        </span>
-        <div class="text-center">
-          <a role="button" class="btn btn-outline-secondary" href="#" > add to the cart</a>
+  <!--page main-->
+
+  <main class="container mt-5">
+    <article class="row gx-4">
+      <!-- Cart items -->
+      <section class="col-12 col-lg-8">
+        <!-- Cart item 1 -->
+        <div class="cart-items p-3 ">
+          <div class="row ">
+            <div class="col-3">
+              <img src="./product_image/Main-casserole.jpg" alt="Item" class="img-fluid">
+            </div>
+            <div class="col-6">
+              <h5>Blackwell Casserole Cast Iron</h5>
+              <h6>$60</h6>
+              <label for="Quantity1">Quantity</label>
+              <select id="Quantity1" class="form-select w-auto d-inline-block">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="col-3 text-end close">
+              <i class="bi bi-x-circle"></i>
+            </div>
+          </div>
         </div>
-      </p>
-          
+        <!-- Cart item 2 -->
+        <div class="cart-items p-3 ">
+          <div class="row ">
+            <div class="col-3">
+              <img src="./product_image/Main-oven-dishes.jpg" alt="Item" class="img-fluid">
+            </div>
+            <div class="col-6">
+              <h5>Blackwell Casserole Cast Iron</h5>
+              <h6>$45</h6>
+              <label for="Quantity1">Quantity</label>
+              <select id="Quantity1" class="form-select w-auto d-inline-block">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="col-3 text-end close">
+              <i class="bi bi-x-circle"></i>
+            </div>
+          </div>
         </div>
-      </div>
-    </article>
-   
-    <article class="col-xl-3 col-lg-4 col-md-6">
-      <div class="card product-sell" >
-        <img src="./product_image/Main-casserole.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h6 class="card-subtitle mb-2 text-muted ">pan</h6>
-          <h5 class="card-title">grey seramic pan</h5>
-          <p class="card-text">25.000 DT <span class="ml-auto float-end rating-star">
-            <i class=" bi bi-star-fill"></i>
-            <i class=" bi bi-star-fill"></i>
-            <i class=" bi bi-star-fill"></i>
-          
-        </span>
-        <div class="text-center">
-          <a role="button" class="btn btn-outline-secondary" href="#" > add to the cart</a>
+        <!-- Cart item 2 -->
+        <div class="cart-items p-3 ">
+          <div class="row ">
+            <div class="col-3">
+              <img src="./product_image/Main-tonic-glass.jpg" alt="Item" class="img-fluid">
+            </div>
+            <div class="col-6">
+              <h5>Blackwell Casserole Cast Iron</h5>
+              <h6>$20</h6>
+              <label for="Quantity1">Quantity</label>
+              <select id="Quantity1" class="form-select w-auto d-inline-block">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="col-3 text-end close">
+              <i class="bi bi-x-circle"></i>
+            </div>
+          </div>
         </div>
-      </p>
-          
-        </div>
-      </div>
-    </article>
-   
-    <article class="col-xl-3 col-lg-4 col-md-6">
-      <div class="card product-sell" >
-        <img src="./product_image/Main-oven-dishes.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h6 class="card-subtitle mb-2 text-muted ">pan</h6>
-          <h5 class="card-title">grey seramic pan</h5>
-          <p class="card-text">25.000 DT <span class="ml-auto float-end rating-star">
-            <i class=" bi bi-star-fill"></i>
-            <i class=" bi bi-star-fill"></i>
-            <i class=" bi bi-star-fill"></i>
-          
-        </span>
-        <div class="text-center">
-          <a role="button" class="btn btn-outline-secondary" href="#" > add to the cart</a>
-        </div>
-      </p>
-          
-        </div>
-      </div>
-    </article>
-   
-    <article class="col-xl-3 col-lg-4 col-md-6">
-      <div class="card product-sell" >
-        <img src="./product_image/Main-tonic-glass.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h6 class="card-subtitle mb-2 text-muted ">pan</h6>
-          <h5 class="card-title">grey seramic pan</h5>
-          <p class="card-text">25.000 DT <span class="ml-auto float-end rating-star">
-            <i class=" bi bi-star-fill"></i>
-            <i class=" bi bi-star-fill"></i>
-            <i class=" bi bi-star-fill"></i>
-          
-        </span>
-        <div class="text-center">
-          <a role="button" class="btn btn-outline-secondary" href="#" > add to the cart</a>
-        </div>
-      </p>
-          
-        </div>
-      </div>
-    </article>
-   
+      </section>
   
-    
-  </section>
-
-</main>
-
-<footer class="footer mt-auto"> <div class="row d-flex footer-items">
+      <!-- Payment Section -->
+      <aside class="col-12 col-lg-4 mt-4 mt-lg-0">
+        <div class="border p-4">
+          <h4>Order Total</h4>
+          <div class="d-flex mb-3">
+            <input type="text" class="form-control me-2" placeholder="Promo code">
+            <button class="btn btn-primary">Verify</button>
+          </div>
+          <div class="d-flex justify-content-between">
+            <span>Items</span><span>$125</span>
+          </div>
+          <div class="d-flex justify-content-between">
+            <span>Shipping</span><span>$10</span>
+          </div>
+          <div class="d-flex justify-content-between">
+            <span>Discounts</span><span>-$15</span>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between fw-bold">
+            <span>Total</span><span>$120</span>
+          </div>
+          <button class="btn btn-primary w-100 mt-3">Pay Now</button>
+        </div>
+      </aside>
+    </article>
+  </main>
   
-  <div class="col">
-    <h5>catogories</h5>
-    <ul>
-      <li>pans</li>
-      <li>table ware</li>
-      <li>glasses</li>
-      <li>kitcheln machine</li>
-    </ul>
-  </div>
-  
-  <div class="col">
-    <h5>more info</h5>
-    <ul>
-      <li>terms</li>
-      <li>services</li>
-      <li>Privacy</li>
-      <li>About us</li>
-    </ul>
-  </div>
-  <div class="col">
-    <h5>payment methods</h5>
-    <div class="col-12 col-sm-6 col-lg-auto order-lg-3 mb-2 footer__payments">
-      <h6 class="heading medium strong mb-3 text-nowrap">Payment methods</h6>
 
-      <div class="d-flex flex-wrap mb-3">
-          <img src="./icon_amex.png" alt="Apple Pay" title="Apple Pay" height="36" class="d-none mb-2 mr-2 js-applepay" loading="lazy">
-          <img src="./icon_paypal.png" alt="Paypal" title="Paypal" height="36" class="mb-2 mr-2" loading="lazy">
-          <img src="./icon_visa.png" alt="Creditcard" title="Creditcard" height="36" class="mb-2 mr-2" loading="lazy">
-          <img src="./icon_postepay.png" alt="Creditcard" title="Creditcard" height="36" class="mb-2 mr-2" loading="lazy">
-          <img src="./icon_mastercard.png" alt="Creditcard" title="Creditcard" height="36" class="mb-2 mr-2" loading="lazy">
-
-  </div>
-  </div>
-    
+  <!-- Page footer -->
+  <footer class="footer mt-auto">
+    <div class="row d-flex footer-items">
+      <div class="col">
+        <h5>Categories</h5>
+        <ul>
+          <li>Pans</li>
+          <li>Tableware</li>
+          <li>Glasses</li>
+          <li>Kitchen Machines</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h5>More Info</h5>
+        <ul>
+          <li>Terms</li>
+          <li>Services</li>
+          <li>Privacy</li>
+          <li>About Us</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h5>Payment Methods</h5>
+        <div class="d-flex flex-wrap">
+          <img src="/payment_icon/icon_amex.png" alt="Apple Pay" height="36" class="d-none mb-2 mr-2" loading="lazy">
+          <img src="./payment_icon/icon_paypal.png" alt="Paypal" height="36" class="mb-2 mr-2" loading="lazy">
+          <img src="./payment_icon/icon_postepay.png" alt="Creditcard" height="36" class="mb-2 mr-2" loading="lazy">
+          <img src="./payment_icon/icon_visa.png" alt="Postepay" height="36" class="mb-2 mr-2" loading="lazy">
+          <img src="./payment_icon/icon_mastercard.png" alt="Mastercard" height="36" class="mb-2 mr-2" loading="lazy">
+        </div>
+      </div>
+      <div class="col">
+        <h5>Warehouse Location</h5>
+        <ul>
+          <li>Tusis-fake-location</li>
+          <li>Bizart-fake street</li>
+        </ul>
+      </div>
     </div>
-    <div class="col">
-      <h5>wearhous location</h5>
-      <ul>
-        <li>tusis-fake-location</li>
-        <li>bizart-fake street</li>
-        
-      </ul>
-    </div>
-  </div>
-</div></footer>
+  </footer>
 
+  <script src="./npm/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"> </script>
 </body>
-<script src="./npm/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"> </script>
 </html>

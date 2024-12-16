@@ -3,63 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign up</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="../npm/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div  class="container-fluid">
-
-        <form class="mx-auto">
-            <h4 class="text-center"> sign up </h4>
+    <div class="container-fluid">
+        <form class="mx-auto" onsubmit="return validateForm(event)">
+            <h4 class="text-center">Sign Up</h4>
             <div class="row mt-5">
 
-              <div class="col-md-6 mb-3">
-                <label for="First" class="form-label">First name</label>
-                <input type="text" class="form-control" id="First" aria-describedby="emailHelp" required>
-                </div>
+                <!-- First Name -->
                 <div class="col-md-6 mb-3">
-                <label for="surname" class="form-label"surname>surname</label>
-                <input type="text" class="form-control" id="surname" aria-describedby="emailHelp" required>
-                
-              </div>
-           
-            
-              <div class="col-md-6 mb-3">
-                <label for="Usuename" class="form-label">Usuename</label>
-                <input type="text" class="form-control" id="Usuename" aria-describedby="emailHelp"  required>
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" required>
                 </div>
+
+                <!-- Surname -->
                 <div class="col-md-6 mb-3">
-                <label for="Email1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp"  required>
-                <details>
-                  <summary></summary>
-                  <div id="emailHelp" class="my-1">We'll never share your email with anyone else.</div>
-                </details>
-              </div>
+                    <label for="surname" class="form-label">Surname</label>
+                    <input type="text" class="form-control" id="surname" required>
+                </div>
+
+                <!-- Username -->
+                <div class="col-md-6 mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" required>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" required>
+                    
+                </div>
             </div>
+
             <div class="row mt-5">
 
-              
-              <div class="col-md-6 mb-3">
-              <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password"  required>
+                <!-- Password -->
+                <div class="col-md-6 mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="col-md-6 mb-3">
+                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" required>
+                </div>
             </div>
-            <div class="col-md-6 mb-3">
-              <label for="conform" class="form-label"> conform Password</label>
-              <input type="password" class="form-control" id="conform"  required>
-            </div>
+
+            <!-- Terms and Conditions -->
             <div class="mb-3 mt-3 form-check">
-              <input type="checkbox" class="btn-outline-primary " id="terms" required>
-              <label class="form-check-label  " for="terms"  required>I agree to all  the terms</label>
+                <input type="checkbox" class="form-check-input" id="terms" required>
+                <label class="form-check-label" for="terms">I agree to all the terms</label>
             </div>
-          </div>
 
-            
-            <button type="submit" class="btn btn-primary mt-4">sign up</button>
-          </form>
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary mt-4" >Sign Up</button>
+        </form>
     </div>
+
+    <script src="../npm/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./signIn.js"></script>
 </body>
-<script src="../npm/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"> </script>
-<script src="./signIn.js"></script>
 </html>

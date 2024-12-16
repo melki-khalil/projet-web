@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cusina</title>
+  <link rel="stylesheet" href="Mainstyles.css">
+  <link rel="stylesheet" href="./npm/node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./npm/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+  <!-- Page header -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-custom-redish nav-items pb-2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Cusina</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Cart</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page navigator -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom-redish nav-items pb-2">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- Dropdown items here (categories, etc.) -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page main -->
+  <main class="container mb-5 d-flex flex-wrap">
+    <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+      <!-- Main product image -->
+      <div class="product-image mb-3 col-md-8">
+        <img src="./product_image/pot.jpeg" alt="Main product image" class="img-fluid">
+      </div>
+
+      <!-- Small product images -->
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2">
+        <div class="col-3">
+          <img src="./product_image/pot.jpeg" alt="Small image 1" class="img-fluid">
+        </div>
+        <div class="col-3">
+          <img src="./product_image/cheshirrr.jpeg" alt="Small image 2" class="img-fluid">
+        </div>
+        <div class="col-3">
+          <img src="./product_image/chyraliss.jpeg" alt="Small image 3" class="img-fluid">
+        </div>
+        <div class="col-3">
+          <img src="./product_image/FRr.jpg" alt="Small image 4" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+    <!-- Product details -->
+    <div class="col-12 col-md-6 d-flex flex-column justify-content-start">
+      <h2>Product Name</h2>
+      <h6>Brand</h6>
+      <div class="rating-star mb-2">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+      </div>
+      <h5>Price</h5>
+      <div>Color</div>
+      <div>Details</div>
+      <button class="btn btn-primary mt-3">Add to Cart</button>
+    </div>
+  </main>
+
+  <!-- Page footer -->
+  <footer class="footer mt-auto">
+    <div class="row d-flex footer-items">
+      <div class="col">
+        <h5>Categories</h5>
+        <ul>
+          <li>Pans</li>
+          <li>Tableware</li>
+          <li>Glasses</li>
+          <li>Kitchen Machines</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h5>More Info</h5>
+        <ul>
+          <li>Terms</li>
+          <li>Services</li>
+          <li>Privacy</li>
+          <li>About Us</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h5>Payment Methods</h5>
+        <div class="d-flex flex-wrap">
+          <img src="/payment_icon/icon_amex.png" alt="Apple Pay" height="36" class="d-none mb-2 mr-2" loading="lazy">
+          <img src="./payment_icon/icon_paypal.png" alt="Paypal" height="36" class="mb-2 mr-2" loading="lazy">
+          <img src="./payment_icon/icon_postepay.png" alt="Creditcard" height="36" class="mb-2 mr-2" loading="lazy">
+          <img src="./payment_icon/icon_visa.png" alt="Postepay" height="36" class="mb-2 mr-2" loading="lazy">
+          <img src="./payment_icon/icon_mastercard.png" alt="Mastercard" height="36" class="mb-2 mr-2" loading="lazy">
+        </div>
+      </div>
+      <div class="col">
+        <h5>Warehouse Location</h5>
+        <ul>
+          <li>Tusis-fake-location</li>
+          <li>Bizart-fake street</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./npm/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"> </script>
+</body>
+</html>
