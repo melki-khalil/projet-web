@@ -34,3 +34,17 @@
 .close i:hover,.close i:focus{
     color: red;
 }
+#sign{
+    color: white;
+  border-color: rgba(207, 12, 12, 0.912);
+
+}
+#carouselExampleIndicators, .carousel-item img  {
+    height: 80vh; /* Adjust this value to make it smaller or larger */
+  }
+  #carouselExampleIndicators{
+    border-bottom:1px solid gray ;
+  }
+  #toastImg{
+    max-width: 20px;
+  }
