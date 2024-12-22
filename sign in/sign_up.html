@@ -6,66 +6,61 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="../npm/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./style.css">
+    <script defer src="./signIn.js"></script>
 </head>
 <body>
     <div class="container-fluid">
-        <form class="mx-auto" onsubmit="return validateForm(event)">
+        <form class="needs-validation mx-auto" id="form">
             <h4 class="text-center">Sign Up</h4>
             <div class="row mt-5">
-
                 <!-- First Name -->
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-3 input-control">
                     <label for="firstName" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="firstName" required>
+                    <input type="text" class="form-control" id="firstName" placeholder="only letters">
+                    <div class="error"></div>
                 </div>
-
                 <!-- Surname -->
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-3 input-control">
                     <label for="surname" class="form-label">Surname</label>
-                    <input type="text" class="form-control" id="surname" required>
+                    <input type="text" class="form-control" id="surname" placeholder="only letters">
+                    <div class="error"></div>
                 </div>
-
                 <!-- Username -->
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-3 input-control">
                     <label for="username" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="username" required>
+                    <input type="text" class="form-control" id="username" placeholder="Username">
+                    <div class="error"></div>
                 </div>
-
                 <!-- Email -->
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-3 input-control">
                     <label for="email" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="email" required>
-                    
+                    <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                    <div class="error"></div>
                 </div>
             </div>
-
             <div class="row mt-5">
-
                 <!-- Password -->
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-3 input-control">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" required>
+                    <input type="password" class="form-control" id="password" minlength="8">
+                    <div class="error"></div>
                 </div>
-
                 <!-- Confirm Password -->
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-3 input-control">
                     <label for="confirmPassword" class="form-label">Confirm Password</label>
-                    <input type="password" class="form-control" id="confirmPassword" required>
+                    <input type="password" class="form-control" id="confirmPassword">
+                    <div class="error"></div>
                 </div>
             </div>
-
             <!-- Terms and Conditions -->
             <div class="mb-3 mt-3 form-check">
-                <input type="checkbox" class="form-check-input" id="terms" required>
+                <input type="checkbox" class="form-check-input" id="terms">
                 <label class="form-check-label" for="terms">I agree to all the terms</label>
             </div>
-
             <!-- Submit Button -->
-            <button type="submit" class="btn btn-primary mt-4" >Sign Up</button>
+            <button type="submit" class="btn btn-primary mt-4">Sign Up</button>
         </form>
     </div>
-
     <script src="../npm/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./signIn.js"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@
 </head>
 <body>
   <!--page header-->
-  <header class="navbar navbar-expand-lg navbar-dark bg-custom-redish nav-items pb-2">
+  <header  class="navbar navbar-expand-lg navbar-dark bg-custom-redish nav-items pb-2">
     <div class="container-fluid">
       <a class="navbar-brand" href="../LandPage.html" id="home-icon">Tanjarati</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@
           </li>
   
           <li class="nav-item">
-            <a class="nav-link" href="./other-pages/cart.html"><i class="bi bi-cart"></i> Cart</a>
+            <a class="nav-link" href="./other-pages/cart.html"><i class="bi bi-cart"></i> Cart <span class=" badge bg-success" id="nbCartItems"></span></a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -48,7 +48,7 @@
 
   </header>
   <!--page navigator-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-custom-redish nav-items  mb-3">
+  <nav id="nave" class="navbar navbar-expand-lg navbar-dark bg-custom-redish nav-items  mb-3">
 
 
     <div class="container-fluid ">
@@ -189,7 +189,7 @@
   <section class="row">
     <article class="col-xl-3 col-lg-4 col-md-6  mb-2 ">
       <div class="card product-sell" >
-        <img src="./product_image/cas-1.jpeg" class="card-img-top" alt="..."  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="see more details"  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="see more details">
+        <img src="./product_image/cas-1.jpeg" onclick="getProduct('./other-pages/product.html')" class="card-img-top" alt="..."  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="see more details"  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="see more details">
         <div class="card-body">
           <h6 class="card-subtitle mb-2 text-muted ">pan</h6>
           <h5 class="card-title">cassarol</h5>
@@ -210,7 +210,7 @@
    
     <article class="col-xl-3 col-lg-4 col-md-6  mb-2">
       <div class="card product-sell" >
-        <img src="./product_image/Main-casserole.jpg" class="card-img-top" alt="..."  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="see more details">
+        <img src="./product_image/Main-casserole.jpg" onclick="getProduct('./other-pages/product.html')" class="card-img-top" alt="..."  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="see more details">
         <div class="card-body">
           <h6 class="card-subtitle mb-2 text-muted ">pan</h6>
           <h5 class="card-title">grey seramic pan</h5>
@@ -232,7 +232,7 @@
    
     <article class="col-xl-3 col-lg-4 col-md-6  mb-2">
       <div class="card product-sell" >
-        <img src="./product_image/Main-oven-dishes.jpg" class="card-img-top" alt="..."  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="see more details">
+        <img src="./product_image/Main-oven-dishes.jpg" onclick="getProduct('./other-pages/product.html')" class="card-img-top" alt="..."  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="see more details">
         <div class="card-body">
           <h6 class="card-subtitle mb-2 text-muted ">dishes</h6>
           <h5 class="card-title">oven dishes</h5>
@@ -254,7 +254,7 @@
    
     <article class="col-xl-3 col-lg-4 col-md-6  mb-2">
       <div class="card product-sell" >
-        <img src="./product_image/Main-tonic-glass.jpg" class="card-img-top" alt="..."  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="see more details">
+        <img src="./product_image/Main-tonic-glass.jpg" onclick="getProduct('./other-pages/product.html')" class="card-img-top" alt="..."  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="see more details">
         <div class="card-body">
           <h6 class="card-subtitle mb-2 text-muted ">glass</h6>
           <h5 class="card-title">tonic glass</h5>
@@ -362,6 +362,9 @@
 </div>
 
 <!-- end model -->
+<!-- go back to the top button -->
+<button id="scrollButton" onclick="scrollToTop()"><i class="bi bi-arrow-up"></i></button>
+
 
 
 </body>

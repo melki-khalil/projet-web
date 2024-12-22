@@ -1,62 +1,95 @@
-function isletters(ch) {
+function isLetters(str) {
     const regex = /^[\p{L}]+$/u;
-    return regex.test(ch);
+    return regex.test(str);
 }
 
-function validateForm(event) {
-    let isValid = true;
+const isValidEmail = (email) => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+};
 
-    // Get references to form inputs
-    const firstName = document.getElementById('firstName');
-    const surname = document.getElementById('surname');
-    const username = document.getElementById('username');
-    const email = document.getElementById('email');
-    const password = document.getElementById('password');
-    const confirmPassword = document.getElementById('confirmPassword');
-    const terms = document.getElementById('terms');
+const form = document.getElementById('form');
+const firstName = document.getElementById('firstName');
+const surname = document.getElementById('surname');
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const confirmPassword = document.getElementById('confirmPassword');
+const terms = document.getElementById('terms');
 
-    // Reset custom validity messages
-    firstName.setCustomValidity("");
-    surname.setCustomValidity("");
-    username.setCustomValidity("");
-    confirmPassword.setCustomValidity("");
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    validation();
+});
 
-    // Check if first name is valid
-    if (!isletters(firstName.value)) {
-        isValid = false;
-        firstName.setCustomValidity("First name should contain letters only.");
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success');
+};
+
+const setSuccess = (element) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+};
+
+const validation = () => {
+    const vfirstName = firstName.value.trim();
+    const vsurname = surname.value.trim();
+    const vUsername = username.value.trim();
+    const vEmail = email.value.trim();
+    const VPW = password.value.trim();
+    const vCPW = confirmPassword.value.trim();
+
+    if (vfirstName === '') {
+        setError(firstName, 'First name is required');
+    } else if (!isLetters(vfirstName)) {
+        setError(firstName, 'Invalid input, only letters allowed');
+    } else {
+        setSuccess(firstName);
     }
 
-    // Check if surname is valid
-    if (!isletters(surname.value)) {
-        isValid = false;
-        surname.setCustomValidity("Surname should contain letters only.");
+    if (vsurname === '') {
+        setError(surname, 'Surname is required');
+    } else if (!isLetters(vsurname)) {
+        setError(surname, 'Invalid input, only letters allowed');
+    } else {
+        setSuccess(surname);
     }
 
-    // Check if username contains spaces
-    if (username.value.indexOf(" ") !== -1) {
-        isValid = false;
-        username.setCustomValidity("Username should not contain spaces.");
+    if (vUsername === '') {
+        setError(username, 'Username is required');
+    } else if (vUsername.indexOf(' ') !== -1) {
+        setError(username, 'Invalid input, no spaces allowed');
+    } else {
+        setSuccess(username);
     }
 
-    // Check if password meets length requirement
-    if (password.value.length < 8) {
-        isValid = false;
-        password.setCustomValidity("Password should be at least 8 characters long.");
+    if (vEmail === '') {
+        setError(email, 'Email is required');
+    } else if (!isValidEmail(vEmail)) {
+        setError(email, 'Provide a valid email address');
+    } else {
+        setSuccess(email);
     }
-
-    // Check if password and confirm password match
-    if (password.value !== confirmPassword.value) {
-        isValid = false;
-        confirmPassword.setCustomValidity("Passwords do not match.");
+    // password valdation
+    if (VPW === '') {
+        setError(password, 'Password is required');
+    } else if (vCPW === '') {
+        setError(confirmPassword, 'Confirm password is required');
+        setSuccess(password);
+    } else if (vCPW !== VPW) {
+        setError(confirmPassword, 'Passwords do not match');
+        setSuccess(password);
+    } else {
+        
+        setSuccess(confirmPassword);
     }
-
-    // If any validation failed, prevent form submission
-    if (!isValid) {
-        event.preventDefault();
-        return false;
-    }
-
-    // If all validations pass, allow form submission
-    return true;
-}
+};

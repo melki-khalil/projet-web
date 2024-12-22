@@ -176,7 +176,7 @@
                 <option value="5">5</option>
               </select>
             </div>
-            <div class="col-3 text-end close">
+            <div class="col-3 text-end close" data-bs-toggle="modal" data-bs-target="#removeItem">
               <i class="bi bi-x-circle"></i>
             </div>
           </div>
@@ -199,7 +199,7 @@
                 <option value="5">5</option>
               </select>
             </div>
-            <div class="col-3 text-end close">
+            <div class="col-3 text-end close" data-bs-toggle="modal" data-bs-target="#removeItem">
               <i class="bi bi-x-circle"></i>
             </div>
           </div>
@@ -222,7 +222,7 @@
                 <option value="5">5</option>
               </select>
             </div>
-            <div class="col-3 text-end close">
+            <div class="col-3 text-end close" data-bs-toggle="modal" data-bs-target="#removeItem">
               <i class="bi bi-x-circle"></i>
             </div>
           </div>
@@ -297,7 +297,28 @@
       </div>
     </div>
   </footer>
+<!-- end footer -->
+ <!-- model start -->
+<div class="modal fade" id="removeItem" tabindex="-1" aria-labelledby="removeItemLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="removeItemLabel">Remove item</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        are you sure you want to remove this item from your cart?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">no</button>
+        <button type="button" onclick="re" class="btn btn-danger">yes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- end model -->
   <script src="../npm/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"> </script>
+  <script src="../codes/js/script.js"></script>
 </body>
 </html>
