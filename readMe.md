@@ -1,48 +1,48 @@
-# Project README
+# Projet README
 
-## Overview
-This project is a basic mapping and implementation for a website. It consists of various pages and assets organized into folders to demonstrate the structure and functionality of an e-commerce site. Below is a detailed description of the files and their purposes.
+## Aperçu
+Ce projet est une cartographie et une implémentation basiques d'un site web. Il comprend diverses pages et ressources organisées en dossiers pour démontrer la structure et la fonctionnalité d'un site e-commerce. Vous trouverez ci-dessous une description détaillée des fichiers et de leurs objectifs.
 
 ---
 
-## Files and Folders
+## Fichiers et Dossiers
 
 ### `landpage.html`
-- **Description**: The landing page is the first page visitors see. It features a carousel showcasing some shop products and includes links to other pages within the site.
-  - Includes a button to add items to the cart, which triggers a `toast` notification and updates a section displaying the number of items in the cart.
-  - Contains a `modal` prompting users to sign in when they click the "My Account" link.
+- **Description** : La page d'accueil est la première page que les visiteurs voient. Elle comporte un carrousel mettant en avant certains produits de la boutique et inclut des liens vers d'autres pages du site.
+  - Inclut un bouton pour ajouter des articles au panier, ce qui déclenche une notification "toast" et met à jour une section affichant le nombre d'articles dans le panier.
+  - Contient une fenêtre modale (`modal`) demandant aux utilisateurs de se connecter lorsqu'ils cliquent sur le lien "Mon compte".
 
 ### `npm`
-- **Description**: Contains the Bootstrap code used to style and design most of the pages, ensuring a responsive and visually appealing layout.
+- **Description** : Contient le code Bootstrap utilisé pour styliser et concevoir la plupart des pages, assurant une mise en page réactive et esthétique.
 
 ### `other pages`
-- **Contents**: This folder includes pages related to the shop:
-  - **`product.html`**: Demonstrates the layout of a product page, featuring a carousel for product images, descriptions, and an ordering section.
-    - Includes a button to add items to the cart, which triggers a `toast` notification and updates a section displaying the number of items in the cart.
-    - Contains a `modal` prompting users to sign in when they click the "My Account" link.
+- **Contenu** : Ce dossier comprend des pages liées à la boutique :
+  - **`product.html`** : Démontre la mise en page d'une page produit, avec un carrousel pour les images des produits, des descriptions et une section de commande.
+    - Inclut un bouton pour ajouter des articles au panier, ce qui déclenche une notification "toast" et met à jour une section affichant le nombre d'articles dans le panier.
+    - Contient une fenêtre modale (`modal`) demandant aux utilisateurs de se connecter lorsqu'ils cliquent sur le lien "Mon compte".
   
-  - **`card.html`**: Represents the shopping cart where users can review items they have added but have not yet purchased.
-    - Includes a button to add items to the cart, which triggers a `toast` notification and updates a section displaying the number of items in the cart.
-    - Contains a `modal` prompting users to sign in when they click the "My Account" link.
-    - Displays a `remove modal` for deleting items from the cart.
+  - **`card.html`** : Représente le panier où les utilisateurs peuvent consulter les articles qu'ils ont ajoutés mais qu'ils n'ont pas encore achetés.
+    - Inclut un bouton pour ajouter des articles au panier, ce qui déclenche une notification "toast" et met à jour une section affichant le nombre d'articles dans le panier.
+    - Contient une fenêtre modale (`modal`) demandant aux utilisateurs de se connecter lorsqu'ils cliquent sur le lien "Mon compte".
+    - Affiche une fenêtre modale pour supprimer un article du panier (`remove modal`).
   
-  - **`checkout.html`**: Contains the final form for completing the payment process.
+  - **`checkout.html`** : Contient le formulaire final pour terminer le processus de paiement.
 
 ### `codes`
-- **Description**: Contains the custom CSS and JavaScript files that enhance the functionality and aesthetics of the website.
+- **Description** : Contient les fichiers CSS et JavaScript personnalisés qui améliorent la fonctionnalité et l'esthétique du site.
 
 ### `payment_icon`
-- **Description**: Stores icons of the payment methods theoretically supported by the site.
+- **Description** : Stocke les icônes des méthodes de paiement théoriquement prises en charge par le site.
 
 ### `product_image`
-- **Description**: Includes all the product images used throughout the project.
+- **Description** : Inclut toutes les images des produits utilisées dans le projet.
 
 ### `sign in`
-- **Description**: Contains files related to the sign-in and sign-up processes for users.
+- **Description** : Contient les fichiers liés aux processus de connexion et d'inscription des utilisateurs.
 
 ---
 
-## Notes
-This project represents my final website submission. While it lacks some functionality to make it fully operational, it reflects the extent of my current knowledge and effort. Due to limited experience and challenges with mental health, I could not implement every feature I initially planned. Nonetheless, I hope this work meets the expectations and demonstrates my commitment to learning.
+## Remarques
+Ce projet représente ma soumission finale du site web. Bien qu'il manque certaines fonctionnalités pour le rendre pleinement opérationnel, il reflète l'étendue de mes connaissances et efforts actuels. En raison d'une expérience limitée et de défis liés à ma santé mentale, je n'ai pas pu implémenter toutes les fonctionnalités initialement prévues. Néanmoins, j'espère que ce travail répond aux attentes et démontre mon engagement à apprendre.
 
-Thank you for your understanding.
+Merci pour votre compréhension.
