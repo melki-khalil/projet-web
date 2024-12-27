@@ -9,6 +9,8 @@ This project is a basic mapping and implementation for a website. It consists of
 
 ### `landpage.html`
 - **Description**: The landing page is the first page visitors see. It features a carousel showcasing some shop products and includes links to other pages within the site.
+  - Includes a button to add items to the cart, which triggers a `toast` notification and updates a section displaying the number of items in the cart.
+  - Contains a `modal` prompting users to sign in when they click the "My Account" link.
 
 ### `npm`
 - **Description**: Contains the Bootstrap code used to style and design most of the pages, ensuring a responsive and visually appealing layout.
@@ -16,7 +18,14 @@ This project is a basic mapping and implementation for a website. It consists of
 ### `other pages`
 - **Contents**: This folder includes pages related to the shop:
   - **`product.html`**: Demonstrates the layout of a product page, featuring a carousel for product images, descriptions, and an ordering section.
+    - Includes a button to add items to the cart, which triggers a `toast` notification and updates a section displaying the number of items in the cart.
+    - Contains a `modal` prompting users to sign in when they click the "My Account" link.
+  
   - **`card.html`**: Represents the shopping cart where users can review items they have added but have not yet purchased.
+    - Includes a button to add items to the cart, which triggers a `toast` notification and updates a section displaying the number of items in the cart.
+    - Contains a `modal` prompting users to sign in when they click the "My Account" link.
+    - Displays a `remove modal` for deleting items from the cart.
+  
   - **`checkout.html`**: Contains the final form for completing the payment process.
 
 ### `codes`
