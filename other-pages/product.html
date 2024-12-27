@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="../codes/css/Mainstyles.css">
   <link rel="stylesheet" href="../npm/node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="../npm/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="icon" href="./cooking-pot.png" type="image/icon type">
 </head>
 <body>
-  <!-- Page header -->
-  <header class="navbar navbar-expand-lg navbar-dark bg-custom-redish nav-items pb-2">
+  <!--page header-->
+  <header  class="navbar navbar-expand-lg navbar-dark bg-custom-redish nav-items pb-2">
     <div class="container-fluid">
       <a class="navbar-brand" href="../LandPage.html" id="home-icon">Tanjarati</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +24,11 @@
           </li>
           
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Cart</a>
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">my account</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="./other-pages/cart.html"><i class="bi bi-cart"></i> Cart <span class=" badge bg-success" id="nbCartItems"></span></a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -42,14 +47,110 @@
     </div>
 
   </header>
+  <!--page navigator-->
+  <nav id="nave" class="navbar navbar-expand-lg navbar-dark bg-custom-redish nav-items  mb-3">
 
-  <!-- Page navigator -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-custom-redish nav-items pb-2">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <!-- Dropdown items here (categories, etc.) -->
-        </ul>
+
+    <div class="container-fluid ">
+       <div class=" navbar-collapse collapse">
+
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+           
+          
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              catagories
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="#">pots</a></li>
+               <li><a class="dropdown-item" href="#">plats</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="#">glasses</a></li>
+             </ul>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tableware
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="#">pots</a></li>
+               <li><a class="dropdown-item" href="#">plats</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="#">glasses</a></li>
+             </ul>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cutlery
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="#">pots</a></li>
+               <li><a class="dropdown-item" href="#">plats</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="#">glasses</a></li>
+             </ul>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pans and pots
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="#">pots</a></li>
+               <li><a class="dropdown-item" href="#">plats</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="#">glasses</a></li>
+             </ul>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              knives
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="#">pots</a></li>
+               <li><a class="dropdown-item" href="#">plats</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="#">glasses</a></li>
+             </ul>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Kitchen  utensils
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="#">pots</a></li>
+               <li><a class="dropdown-item" href="#">plats</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="#">glasses</a></li>
+             </ul>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Kitchen appliances
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="#">pots</a></li>
+               <li><a class="dropdown-item" href="#">plats</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="#">glasses</a></li>
+             </ul>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Bakeware
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="#">pots</a></li>
+               <li><a class="dropdown-item" href="#">plats</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="#">glasses</a></li>
+             </ul>
+           </li>
+        
+           
+         </ul>
+       </div>
+
+        
       </div>
     </div>
   </nav>
@@ -165,6 +266,26 @@
     </div>
   </footer>
   <!--fotter end-->
+  <!-- model start -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        you need to log in first!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a type="button" href="./sign in/log _in.html" class="btn btn-primary">sign up</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end model -->
   <!--toaster start-->
   <aside id="myToast" class="toast position-fixed top-0  p-3" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
@@ -178,6 +299,7 @@
     </div>
   
   </aside>
+ <!-- end of toastt -->
 </body>
 
 <script src="../codes/js/script.js"></script>
